@@ -1,14 +1,14 @@
 /* === Custom Properties (Tokens) === */
 :root {
-    --bg-main: #0a0a0c;
-    --bg-secondary: #131317;
-    --text-primary: #f0f0f5;
-    --text-secondary: #a0a0b0;
-    --accent-primary: #8a2be2;
-    --accent-secondary: #00f0ff;
-    --glass-bg: rgba(255, 255, 255, 0.03);
-    --glass-border: rgba(255, 255, 255, 0.05);
-    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    --bg-main: #0B1120;
+    --bg-secondary: #0F172A;
+    --text-primary: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --accent-primary: #3B82F6;
+    --accent-secondary: #10B981;
+    --glass-bg: rgba(30, 41, 59, 0.4);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
     --font-sans: 'Inter', sans-serif;
     --font-heading: 'Outfit', sans-serif;
     --transition-slow: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -52,7 +52,7 @@ li {
     width: 50vw;
     height: 50vw;
     background: radial-gradient(circle, var(--accent-primary) 0%, transparent 60%);
-    opacity: 0.15;
+    opacity: 0.12;
     filter: blur(80px);
     z-index: -1;
     animation: drift 20s infinite alternate linear;
@@ -69,23 +69,13 @@ li {
 }
 
 @keyframes drift {
-    0% {
-        transform: translate(0, 0) scale(1);
-    }
-
-    100% {
-        transform: translate(10%, 15%) scale(1.1);
-    }
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(10%, 15%) scale(1.1); }
 }
 
 @keyframes drift-reverse {
-    0% {
-        transform: translate(0, 0) scale(1);
-    }
-
-    100% {
-        transform: translate(-15%, -10%) scale(1.15);
-    }
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(-15%, -10%) scale(1.15); }
 }
 
 /* === Global Utilities === */
@@ -102,7 +92,7 @@ li {
 
 .glass-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.15);
 }
 
 .fade-in {
@@ -130,11 +120,11 @@ li {
 .btn-primary {
     background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
     color: #fff;
-    box-shadow: 0 4px 15px rgba(138, 43, 226, 0.3);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
 
 .btn-primary:hover {
-    box-shadow: 0 6px 20px rgba(0, 240, 255, 0.4);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
     transform: scale(1.05);
 }
 
@@ -188,10 +178,7 @@ li {
 }
 
 /* === Typography === */
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
     font-family: var(--font-heading);
     color: var(--text-primary);
 }
@@ -211,7 +198,7 @@ p {
 }
 
 .navbar.scrolled {
-    background: rgba(10, 10, 12, 0.8);
+    background: rgba(11, 17, 32, 0.9);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     padding: 1rem 0;
@@ -310,7 +297,6 @@ p {
     padding: 0 2rem;
     position: relative;
     padding-top: 80px;
-    /* account for nav */
 }
 
 .hero-content {
@@ -328,18 +314,18 @@ p {
 }
 
 .glitch {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 1.5rem;
-    background: -webkit-linear-gradient(0deg, #fff, #a0a0b0);
+    background: -webkit-linear-gradient(0deg, #fff, #94a3b8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .hero .subtitle {
     font-size: 1.2rem;
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto 2.5rem;
 }
 
@@ -425,7 +411,6 @@ section:not(.hero) {
 .timeline-dot {
     position: absolute;
     left: -2.05rem;
-    /* center on the line */
     top: 2.5rem;
     width: 16px;
     height: 16px;
@@ -470,19 +455,7 @@ section:not(.hero) {
     background-size: cover;
     background-position: center;
     position: relative;
-}
-
-/* Demo gradients since we don't have images */
-.placeholder-1 {
-    background: linear-gradient(45deg, #111, #8a2be2);
-}
-
-.placeholder-2 {
-    background: linear-gradient(45deg, #022, #00f0ff);
-}
-
-.placeholder-3 {
-    background: linear-gradient(45deg, #201, #ff2a5f);
+    border-right: 1px solid var(--glass-border);
 }
 
 .project-info {
@@ -607,7 +580,7 @@ footer {
 /* === Media Queries === */
 @media screen and (max-width: 900px) {
     .glitch {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     .project-card {
@@ -616,6 +589,8 @@ footer {
 
     .project-img {
         min-height: 200px;
+        border-right: none;
+        border-bottom: 1px solid var(--glass-border);
     }
 
     .project-info {
@@ -665,6 +640,6 @@ footer {
     }
 
     .glitch {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
 }

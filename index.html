@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Creative Developer</title>
-    <meta name="description" content="Personal portfolio showcasing creative development work, skills, and projects.">
+    <title>Portfolio | IT Student & Developer</title>
+    <meta name="description" content="Personal portfolio for an IT student and aspiring software developer.">
     <!-- Google Fonts: Inter & Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,13 +21,13 @@
 
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">Port<span>folio.</span></a>
+            <a href="#" class="logo">IT<span>Dev.</span></a>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact" class="nav-btn">Contact</a></li>
             </ul>
             <div class="burger-menu" id="burger-menu">
@@ -40,15 +40,22 @@
 
     <main>
         <!-- Hero Section -->
-        <section id="hero" class="hero fade-in">
+        <section id="home" class="hero fade-in">
             <div class="hero-content">
-                <p class="greeting">Hi there, I am</p>
-                <h1 class="glitch" data-text="A Creative Developer">A Creative Developer</h1>
-                <p class="subtitle">I build interactive, beautiful, and accessible web experiences blending design and
-                    technology.</p>
+                <p class="greeting">Hello World, I'm</p>
+                <h1 class="glitch" data-text="An Aspiring Software Developer">An Aspiring Software Developer</h1>
+                <p class="subtitle">I'm an IT student passionate about building functional backends and clean user interfaces. Always learning and eager to build modern web solutions.</p>
                 <div class="cta-group">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    <a href="#projects" class="btn btn-primary">View My Projects</a>
+                    <a href="resume.pdf" download class="btn btn-secondary">Download Resume</a>
+                </div>
+                <div class="social-links hero-socials" style="justify-content: center; margin-top: 2.5rem; gap: 2rem;">
+                    <a href="https://github.com" target="_blank" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
                 </div>
             </div>
         </section>
@@ -61,13 +68,9 @@
             </div>
             <div class="about-container">
                 <div class="about-text glass-card">
-                    <h3>Who am I?</h3>
-                    <p>I am a passionate software developer specializing in front-end and full-stack development. I
-                        enjoy taking complex problems and turning them into simple and beautiful interface designs. My
-                        approach to development revolves around clean code, user-centric design, and continuous
-                        learning.</p>
-                    <p style="margin-top: 1rem;">When I'm not coding, you can find me exploring new technologies,
-                        contributing to open-source projects, or sharing my knowledge with the developer community.</p>
+                    <h3>IT Student & Problem Solver</h3>
+                    <p>I am currently pursuing a degree in Information Technology with a strong focus on software engineering and web development. My core interest revolves around creating efficient server-side architectures connecting with dynamic client interfaces.</p>
+                    <p style="margin-top: 1rem;">Beyond attending lectures and tackling assignments, I love participating in hackathons, contributing to open-source software, and expanding my skill set. My goal is to become a resilient full-stack developer tackling complex real-world problems.</p>
                 </div>
             </div>
         </section>
@@ -80,88 +83,24 @@
             </div>
             <div class="skills-grid">
                 <div class="skill-card glass-card">
-                    <div class="skill-icon">🚀</div>
-                    <h4>Frontend Development</h4>
-                    <p>HTML5, CSS3, JavaScript (ES6+), React, Vue, dynamic animations and responsive design.</p>
+                    <div class="skill-icon">🐍</div>
+                    <h4>Python & Flask</h4>
+                    <p>Writing clean, maintainable backend logic, developing RESTful APIs, and managing server routing with Python frameworks like Flask.</p>
                 </div>
                 <div class="skill-card glass-card">
-                    <div class="skill-icon">⚙️</div>
-                    <h4>Backend Development</h4>
-                    <p>Node.js, Express, Python, SQL, NoSQL databases and robust REST/GraphQL APIs.</p>
-                </div>
-                <div class="skill-card glass-card">
-                    <div class="skill-icon">🛠️</div>
-                    <h4>Tools & Practices</h4>
-                    <p>Git, Docker, CI/CD, Agile methodology, Unit Testing, and cloud platforms like AWS & Vercel.</p>
+                    <div class="skill-icon">💾</div>
+                    <h4>MySQL Database</h4>
+                    <p>Designing normalized database schemas, executing complex queries, and optimizing relational databases for robust performance.</p>
                 </div>
                 <div class="skill-card glass-card">
                     <div class="skill-icon">🎨</div>
-                    <h4>UI/UX Design</h4>
-                    <p>Figma, Adobe XD, Wireframing, Prototyping, and user-centered design principles.</p>
+                    <h4>HTML & CSS</h4>
+                    <p>Building accessible DOM structures and crafting responsive and dynamic modern layouts strictly utilizing CSS methodologies.</p>
                 </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="experience fade-in">
-            <div class="section-heading">
-                <h2>Experience</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item glass-card">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Senior Web Developer</h3>
-                        <span class="timeline-date">2023 - Present | Tech Innovations Inc.</span>
-                        <p>Leading the front-end team to build scalable enterprise web applications using React and
-                            Next.js. Improved performance scores by 40%.</p>
-                    </div>
-                </div>
-                <div class="timeline-item glass-card">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Full Stack Developer</h3>
-                        <span class="timeline-date">2020 - 2023 | Creative Agency</span>
-                        <p>Developed full-stack web solutions for high-profile clients. Managed database architectures
-                            and deployed scalable APIs using Node.js.</p>
-                    </div>
-                </div>
-                <div class="timeline-item glass-card">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Junior Developer</h3>
-                        <span class="timeline-date">2018 - 2020 | Startup Hub</span>
-                        <p>Assisted in the development of responsive user interfaces and maintained legacy codebases.
-                            Learned modern JavaScript frameworks.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="education fade-in">
-            <div class="section-heading">
-                <h2>Education</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item glass-card">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Master of Computer Science (M.S.)</h3>
-                        <span class="timeline-date">2018 - 2020 | Global Tech University</span>
-                        <p>Graduated with honors. Specialized in Artificial Intelligence and Human-Computer Interaction.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item glass-card">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Bachelor of Science in Software Engineering</h3>
-                        <span class="timeline-date">2014 - 2018 | State University</span>
-                        <p>Core focus on software architecture, algorithms, data structures, and web technologies.</p>
-                    </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">⚡</div>
+                    <h4>JavaScript</h4>
+                    <p>Bringing interfaces to life by implementing interactive features, handling asynchronous data fetching, and manipulating the DOM.</p>
                 </div>
             </div>
         </section>
@@ -169,53 +108,86 @@
         <!-- Projects Section -->
         <section id="projects" class="projects fade-in">
             <div class="section-heading">
-                <h2>Selected Projects</h2>
+                <h2>Project Showcase</h2>
                 <div class="underline"></div>
             </div>
             <div class="project-grid">
                 <!-- Project 1 -->
                 <div class="project-card glass-card">
-                    <div class="project-img placeholder-1"></div>
+                    <div class="project-img" style="background-image: url('images/project1.png');"></div>
                     <div class="project-info">
-                        <h3>E-Commerce Platform</h3>
-                        <p>A modern e-commerce solution with dynamic product routing, cart state management, and
-                            seamless checkout flow.</p>
+                        <h3>E-Commerce Web Application</h3>
+                        <p>A full-stack e-commerce solution displaying a product catalog with shopping cart capabilities, user authentication, and responsive design.</p>
                         <div class="tags">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>Stripe</span>
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
                         </div>
-                        <a href="#" class="btn-text">View Project <span>&rarr;</span></a>
+                        <a href="https://github.com" target="_blank" class="btn-text">View Source <span>&rarr;</span></a>
                     </div>
                 </div>
                 <!-- Project 2 -->
                 <div class="project-card glass-card">
-                    <div class="project-img placeholder-2"></div>
+                    <div class="project-img" style="background-image: url('images/project2.png');"></div>
                     <div class="project-info">
-                        <h3>Dashboard Analytics</h3>
-                        <p>Data visualization dashboard for financial metrics utilizing complex charting libraries and
-                            real-time websockets.</p>
+                        <h3>Inventory Management Dashboard</h3>
+                        <p>A data-driven web app allowing businesses to manage their stock. Includes a MySQL-backed data store, live charts, and paginated tables.</p>
                         <div class="tags">
-                            <span>Vue</span>
-                            <span>D3.js</span>
-                            <span>Socket.io</span>
+                            <span>MySQL</span>
+                            <span>Python</span>
+                            <span>Chart.js</span>
+                            <span>Bootstrap</span>
                         </div>
-                        <a href="#" class="btn-text">View Project <span>&rarr;</span></a>
+                        <a href="https://github.com" target="_blank" class="btn-text">View Source <span>&rarr;</span></a>
                     </div>
                 </div>
                 <!-- Project 3 -->
                 <div class="project-card glass-card">
-                    <div class="project-img placeholder-3"></div>
+                    <div class="project-img" style="background-image: url('images/project3.png');"></div>
                     <div class="project-info">
-                        <h3>Social Network App</h3>
-                        <p>A full-stack social media application featuring real-time chat, authentication, and image
-                            upload capabilities.</p>
+                        <h3>Personal Portfolio Mockup</h3>
+                        <p>A minimalist personal portfolio built closely focusing on UI/UX best practices, smooth scrolling animations, and glassmorphism styling elements.</p>
                         <div class="tags">
-                            <span>Next.js</span>
-                            <span>Tailwind</span>
-                            <span>Firebase</span>
+                            <span>HTML</span>
+                            <span>Vanilla CSS</span>
+                            <span>JavaScript</span>
                         </div>
-                        <a href="#" class="btn-text">View Project <span>&rarr;</span></a>
+                        <a href="https://github.com" target="_blank" class="btn-text">View Source <span>&rarr;</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience fade-in">
+            <div class="section-heading">
+                <h2>Experience & Education</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Software Developer Intern</h3>
+                        <span class="timeline-date">Summer 2025 | Tech Startup Inc.</span>
+                        <p>Assisted the core engineering team in debugging user-facing web applications. Developed REST endpoints and managed documentation.</p>
+                    </div>
+                </div>
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>B.S. Information Technology</h3>
+                        <span class="timeline-date">2023 - Present | State University</span>
+                        <p>Focusing on foundational software engineering concepts, database architecture, network security, and modern web frameworks.</p>
+                    </div>
+                </div>
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Hackathon Participant</h3>
+                        <span class="timeline-date">Fall 2024 | Campus Hackathon</span>
+                        <p>Collaborated with a team of four to build a real-time event booking system in 48 hours using Python, MySQL, and generic HTML/CSS frontend.</p>
                     </div>
                 </div>
             </div>
@@ -229,7 +201,7 @@
             </div>
             <div class="contact-container glass-card">
                 <form id="contact-form" class="contact-form"
-                    onsubmit="event.preventDefault(); alert('Form submitted! (Demo only)');">
+                    onsubmit="event.preventDefault(); alert('Message Sent! (Demo purposes)');">
                     <div class="input-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" required placeholder="John Doe">
@@ -240,16 +212,15 @@
                     </div>
                     <div class="input-group">
                         <label for="message">Message</label>
-                        <textarea id="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+                        <textarea id="message" rows="5" required placeholder="I'd love to collaborate on a project..."></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
                 </form>
                 <div class="contact-info">
-                    <h3>Let's build something awesome.</h3>
-                    <p>I'm currently available for freelance work and open to new opportunities. Reach out if you'd like
-                        to chat!</p>
+                    <h3>Let's Connect</h3>
+                    <p>Whether you have an internship opportunity, a project idea, or just want to chat about tech, feel free to drop me a message.</p>
                     <div class="social-links">
-                        <a href="#" aria-label="GitHub">
+                        <a href="https://github.com" target="_blank" aria-label="GitHub">
                             <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
                                 fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path
@@ -257,7 +228,7 @@
                                 </path>
                             </svg>
                         </a>
-                        <a href="#" aria-label="LinkedIn">
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
                             <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
                                 fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path
@@ -267,14 +238,6 @@
                                 <circle cx="4" cy="4" r="2"></circle>
                             </svg>
                         </a>
-                        <a href="#" aria-label="Twitter">
-                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path
-                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
-                                </path>
-                            </svg>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -282,7 +245,7 @@
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span> Created by RM. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Created for the Portfolio. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
