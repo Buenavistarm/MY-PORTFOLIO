@@ -698,3 +698,70 @@ footer {
     justify-content: center;
     gap: 1rem;
 }
+
+/* === Resume Layout & Skills === */
+.resume-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.simple-skill-card {
+    padding: 1rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.simple-skill-card span {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.resume-layout {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.resume-viewer-left {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+}
+
+.resume-img-small {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.resume-img-small:hover {
+    transform: scale(1.02);
+}
+
+.resume-summary-right {
+    flex: 1;
+    min-width: 300px;
+}
+
+.resume-summary-right h3 {
+    margin-bottom: 1rem;
+    color: var(--accent-secondary);
+}
+
+.resume-bullet-list {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    list-style-type: disc;
+    color: var(--text-secondary);
+}
+
+.resume-bullet-list li {
+    margin-bottom: 0.8rem;
+    list-style: disc;
+}
