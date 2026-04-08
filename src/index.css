@@ -671,3 +671,30 @@ footer {
         font-size: 2.5rem;
     }
 }
+
+/* === Resume Section === */
+.resume-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.resume-viewer {
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--glass-border);
+}
+
+.resume-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: var(--glass-shadow);
+}
+
+.resume-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
