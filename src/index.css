@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&family=Space+Mono:wght@700&display=swap');
 
 /* === Custom Properties (Tokens) === */
 :root {
@@ -792,9 +792,15 @@ footer {
 }
 
 .hero-title-main span {
-    color: var(--text-primary);
+    font-family: 'Space Mono', monospace;
+    color: var(--accent-primary);
     display: inline-block;
     margin-top: 0.5rem;
+    letter-spacing: -1px;
+    background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero-description-clean {
