@@ -793,29 +793,34 @@ footer {
 
 .hero-title-main span {
     font-family: 'Space Mono', monospace;
-    color: var(--accent-primary);
+    font-size: 0.9em;
     display: inline-block;
     margin-top: 0.5rem;
-    letter-spacing: -1px;
+    letter-spacing: 2px;
     background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 3s steps(18) forwards, blink-caret 0.75s step-end infinite;
+    border-right: 3px solid var(--accent-secondary);
 }
 
 .hero-title-main span::after {
-    content: '|';
-    position: absolute;
-    right: -15px;
-    color: var(--accent-secondary);
-    animation: blink 0.8s step-end infinite;
-    -webkit-text-fill-color: var(--accent-secondary); /* Override the gradient clip for the cursor */
+    display: none; /* Removed the previous absolute cursor to use border-right for typing effect */
 }
 
-@keyframes blink {
-    from, to { opacity: 1; }
-    50% { opacity: 0; }
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--accent-secondary); }
 }
 
 .hero-description-clean {
