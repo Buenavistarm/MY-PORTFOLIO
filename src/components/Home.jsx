@@ -4,30 +4,32 @@ import React from 'react';
 const Home = () => {
   return (
     <section id="home" className="hero fade-in appear">
-      <div className="hero-inner">
-        {/* Left — Profile Photo */}
-        <div className="hero-photo-wrapper">
-          <div className="hero-photo-ring">
-            <img
-              src="/profile.jpg"
-              alt="Rhea Marie Grencio"
-              className="hero-photo"
-            />
+      <div className="hero-inner-clean">
+        {/* Left — Text Content */}
+        <div className="hero-content-left">
+          <h1 className="hero-title-main">
+            Hello, I'm <br />
+            <span>Rhea Marie Grencio</span>
+          </h1>
+          <p className="hero-description-clean">
+            I'm a 3rd Year BSIT student and TikTok Affiliate Marketer. 
+            I strive to build functional backends and clean user interfaces 
+            through carefully crafted code and creative content strategies.
+          </p>
+          <div className="cta-group-clean">
+            <a href="#contact" className="btn-clean-violet">Say Hello!</a>
+            <a href="/resume.png" download className="btn-clean-outline">My Resume</a>
           </div>
         </div>
 
-        {/* Right — Text Content */}
-        <div className="hero-content">
-          <p className="greeting">Hello World, I'm</p>
-          <h1 className="glitch" data-text="Rhea Marie Grencio">Rhea Marie Grencio</h1>
-          <p className="subtitle">
-            I'm a software developer passionate about building functional backends and clean user interfaces.
-            Always learning and eager to build modern web solutions.
-          </p>
-          <div className="cta-group">
-            <a href="#projects" className="btn btn-primary">View My Projects</a>
-            <a href="/resume.png" download="Rhea_Marie_Grencio_Resume.png" className="btn btn-secondary">Download Resume</a>
-            <a href="#contact" className="btn btn-secondary">Get In Touch</a>
+        {/* Right — Profile Photo */}
+        <div className="hero-photo-container-clean">
+          <div className="hero-photo-wrapper-rect">
+            <img
+              src="/profile.jpg"
+              alt="Rhea Marie Grencio"
+              className="hero-photo-rect"
+            />
           </div>
         </div>
       </div>
