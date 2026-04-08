@@ -18,13 +18,13 @@ const About = () => {
 
       <div className="about-container">
         <div className="about-text glass-card">
-          <h3>Software Developer & Problem Solver</h3>
+          <h3>Software Developer &amp; Problem Solver</h3>
           <p>
-            I am Rhea Marie Grencio, a software developer with a strong focus on software engineering and web development. 
+            I am Rhea Marie Grencio, a software developer with a strong focus on software engineering and web development.
             My core interest revolves around creating efficient server-side architectures connecting with dynamic client interfaces.
           </p>
           <p style={{ marginTop: '1rem' }}>
-            Beyond building personal projects, I love participating in hackathons, contributing to open-source software, 
+            Beyond building personal projects, I love participating in hackathons, contributing to open-source software,
             and expanding my skill set. My goal is to build resilient full-stack solutions.
           </p>
         </div>
