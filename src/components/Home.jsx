@@ -26,6 +26,7 @@ const Home = () => {
           </p>
           <div className="cta-group">
             <a href="#projects" className="btn btn-primary">View My Projects</a>
+            <a href="/resume.png" download="Rhea_Marie_Grencio_Resume.png" className="btn btn-secondary">Download Resume</a>
             <a href="#contact" className="btn btn-secondary">Get In Touch</a>
           </div>
         </div>
